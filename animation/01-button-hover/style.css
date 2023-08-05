@@ -17,3 +17,11 @@ button {
   padding: 16px 24px;
   text-align: center;
 }
+/* solution */
+#transition-container button:hover{
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+#transition-container button:not(:hover){
+  transition: all 0.4s;
+}
