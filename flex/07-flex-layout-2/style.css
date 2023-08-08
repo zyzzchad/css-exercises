@@ -27,3 +27,52 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+/* Solution */
+.header{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 1000;
+}
+ul{
+list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.sidebar{
+  min-width: 300px;
+  padding-right: 32px;
+}
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid white;
+  align-items: start;
+}
+.sidebarCards{
+  display: flex;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 1%;
+  padding-left: 32px;
+}
+.card{
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  text-align: center;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
