@@ -89,3 +89,54 @@
   font-size: 13px;
   font-weight: normal;
 }
+/* solution */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+.header{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  text-align: start;
+  grid-column: 1/3;
+}
+
+.menu{
+  align-self: center;
+}
+.logo{
+  justify-self: start;
+}
+.menu ul{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ list-style: none;
+}
+.sidebar{
+  display: grid;
+  gap: 50px;
+  grid-row: 2/4;
+}
+.nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: column;
+}
+.article{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 20px;
+}
+.footer{
+  display: grid;
+  grid-column: 1/3;
+}
+.article .card{
+  height: 12vw;
+}
+.photo,.side-content{
+  display: grid;
+  align-items: center;
+}
